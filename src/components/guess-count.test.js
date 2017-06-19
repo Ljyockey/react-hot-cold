@@ -5,13 +5,6 @@ import GuessCount from './guess-count';
 
 describe('<GuessCount />', () => {
 
-	const seedGuesses = [];
-	beforeAll(() => {
-		for (let i=1; i <= 10; i++) {
-			seedGuesses.push(i);
-		}
-	});
-
 	it('Renders without crashing', () => {
 		shallow(<GuessCount />);
 	});
